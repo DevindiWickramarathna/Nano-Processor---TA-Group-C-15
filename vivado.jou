@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon May 26 11:03:18 2025
+# Process ID: 18276
+# Current directory: D:/Vivado_designs/nano_processor_V1 - Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8600 D:\Vivado_designs\nano_processor_V1 - Copy\nano_processor_V1.xpr
+# Log file: D:/Vivado_designs/nano_processor_V1 - Copy/vivado.log
+# Journal file: D:/Vivado_designs/nano_processor_V1 - Copy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Vivado_designs/nano_processor_V1 - Copy/nano_processor_V1.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -clean
+launch_runs synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+report_utilization -hierarchical -file utilization_hierarchical.txt
+open_run synth_1 -name synth_1
+report_utilization -hierarchical -file utilization_hierarchical.txt
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+close_design
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+report_utilization
+open_run synth_1 -name synth_1
+report_utilization
+close_design
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+close_design
+close_project
+open_project D:/Vivado_designs/nano_processor_V1/nano_processor_V1.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+launch_simulation
+open_wave_config D:/Vivado_designs/nano_processor_V1/nano_processor_V1.srcs/sim_1/imports/nano_processor_V1/Sim_Add_unit_behav.wcfg
+source Sim_nano_processor.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Vivado_designs/nano_processor_V1/nano_processor_V1.srcs/sim_1/imports/nano_processor_V1/Sim_Add_unit_behav.wcfg
+source Sim_nano_processor.tcl
+close_sim
+launch_simulation
+open_wave_config D:/Vivado_designs/nano_processor_V1/nano_processor_V1.srcs/sim_1/imports/nano_processor_V1/Sim_Add_unit_behav.wcfg
+source Sim_nano_processor.tcl
+close_sim
