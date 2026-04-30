@@ -1,6 +1,6 @@
 # ⚙️ Optimized 4-bit Nanoprocessor – CS1050 Lab 9–10
 
-Welcome to the enhanced and optimized version of our 4-bit nanoprocessor project for **Lab 9–10** of the **Computer Organization and Digital Design (CS1050)** course at the **Department of Computer Science and Engineering, University of Moratuwa**.  
+Welcome to the version one of our 4-bit nanoprocessor project for **Lab 9–10** of the **Computer Organization and Digital Design (CS1050)** course at the **Department of Computer Science and Engineering, University of Moratuwa**.  
 This version features improved accuracy, cleaner architecture, and more modular design.
 
 ---
