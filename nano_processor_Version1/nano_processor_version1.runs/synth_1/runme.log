@@ -1,0 +1,237 @@
+
+*** Running vivado
+    with args -log Adder_3bit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Adder_3bit.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Adder_3bit.tcl -notrace
+Command: synth_design -top Adder_3bit -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 61628 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 358.082 ; gain = 99.406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Adder_3bit' [E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/Adder_3bit.vhd:10]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/FA.vhd:4' bound to instance 'FA_0' of component 'FA' [E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/Adder_3bit.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'FA' [E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/FA.vhd:12]
+INFO: [Synth 8-3491] module 'HA' declared at 'E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/HA.vhd:4' bound to instance 'HA0' of component 'HA' [E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/FA.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'HA' [E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/HA.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'HA' (1#1) [E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/HA.vhd:11]
+INFO: [Synth 8-3491] module 'HA' declared at 'E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/HA.vhd:4' bound to instance 'HA1' of component 'HA' [E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/FA.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'FA' (2#1) [E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/FA.vhd:12]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/FA.vhd:4' bound to instance 'FA_1' of component 'FA' [E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/Adder_3bit.vhd:32]
+INFO: [Synth 8-3491] module 'FA' declared at 'E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/FA.vhd:4' bound to instance 'FA_2' of component 'FA' [E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/Adder_3bit.vhd:40]
+WARNING: [Synth 8-3848] Net C_out in module/entity Adder_3bit does not have driver. [E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/Adder_3bit.vhd:7]
+INFO: [Synth 8-256] done synthesizing module 'Adder_3bit' (3#1) [E:/Computer Architecture/4bit-NanoProcessor-main/4bit-NanoProcessor-main/NanoProcessor_VBasic/NanoProcessor_V1/NanoProcessor_V1.srcs/sources_1/new/Adder_3bit.vhd:10]
+WARNING: [Synth 8-3331] design Adder_3bit has unconnected port C_out
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 412.660 ; gain = 153.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 412.660 ; gain = 153.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 412.660 ; gain = 153.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 412.660 ; gain = 153.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module HA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design Adder_3bit has unconnected port C_out
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 532.344 ; gain = 273.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 532.344 ; gain = 273.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 532.344 ; gain = 273.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 532.344 ; gain = 273.668
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 532.344 ; gain = 273.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 532.344 ; gain = 273.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 532.344 ; gain = 273.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 532.344 ; gain = 273.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 532.344 ; gain = 273.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |LUT2  |     1|
+|3     |LUT3  |     1|
+|4     |IBUF  |     3|
+|5     |OBUF  |     3|
+|6     |OBUFT |     1|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    10|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 532.344 ; gain = 273.668
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 532.344 ; gain = 273.668
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 532.344 ; gain = 273.668
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 638.484 ; gain = 392.715
+INFO: [Common 17-1381] The checkpoint 'E:/Computer Architecture/nano_processor_version1/nano_processor_version1.runs/synth_1/Adder_3bit.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Adder_3bit_utilization_synth.rpt -pb Adder_3bit_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 638.484 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 30 10:51:20 2026...
