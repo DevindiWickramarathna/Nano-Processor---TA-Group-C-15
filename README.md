@@ -1,18 +1,18 @@
-# ⚙️ Optimized 4-bit Nanoprocessor – CS1050 Lab 9–10
+#  Optimized 4-bit Nanoprocessor – CS1050 Lab 9–10
 
 Welcome to the enhanced and optimized version of our 4-bit nanoprocessor project for **Lab 9–10** of the **Computer Organization and Digital Design (CS1050)** course at the **Department of Computer Science and Engineering, University of Moratuwa**.  
 This version features improved accuracy, cleaner architecture, and more modular design.
 
 ---
 
-## 📌 Project Summary
+##  Project Summary
 
 This project implements a basic but functional 4-bit **nanoprocessor** capable of executing a minimal instruction set.  
 Key goals include modular design, optimized control logic, and reliable FPGA implementation using VHDL.
 
 ---
 
-## 🧠 Features at a Glance
+##  Features at a Glance
 
 - 4-bit ALU (add/subtract using two's complement)
 - 3-bit Program Counter with increment and jump
@@ -24,7 +24,7 @@ Key goals include modular design, optimized control logic, and reliable FPGA imp
 - Modular and synthesizable VHDL design
 
 ---
-## 🪛 Optimized Files
+##  Optimized Files
 - The Program Counter
       - Remove the previous version of pc and add a new version that can increment by one itself & jump address and jump_Selector using if case in vhdl
 - Muxs
@@ -32,7 +32,7 @@ Key goals include modular design, optimized control logic, and reliable FPGA imp
 - Adder_3bit
       - remove completely from project
 
-## 🧾 Supported Instruction Set
+##  Supported Instruction Set
 
 | Instruction | Function                                  | Format (12-bit)      |
 |-------------|-------------------------------------------|-----------------------|
@@ -41,28 +41,28 @@ Key goals include modular design, optimized control logic, and reliable FPGA imp
 | `NEG R`     | Two’s complement of register `R`          | `01RRR0000000`        |
 | `JZR R, d`  | Jump to address `d` if register `R` is 0  | `11RRR0000ddd`        |
 
-> 💡 All instructions are 12 bits in length. Fields like `RRR`, `aaa`, and `bbb` indicate register indices; `d` indicates a 3 or 4-bit immediate value.
+>  All instructions are 12 bits in length. Fields like `RRR`, `aaa`, and `bbb` indicate register indices; `d` indicates a 3 or 4-bit immediate value.
 
 ---
 
-## 🔧 Core Components
+##  Core Components
 
-### ✅ Arithmetic & Logic
+###  Arithmetic & Logic
 - **4-bit ALU** – Based on Lab 3’s Ripple Carry Adder (RCA)
 - **3-bit Adder** – Used for incrementing the program counter
 
-### ✅ Control & Memory
+###  Control & Memory
 - **Register File** – 8 registers (`R0–R7`), each 4-bit; `R0` outputs zero
 - **Instruction Decoder** – Parses instruction format and sets control signals
 - **Program ROM** – Stores machine instructions
 
-### ✅ Data Flow Management
+###  Data Flow Management
 - **Multiplexers** – Used for register and ALU input selection
 - **Tri-state Buses** – Shared data and instruction lines reduce wiring
 
 ---
 
-## 🧪 Testing & Deployment
+##  Testing & Deployment
 
 - All components were simulated and verified independently using **Vivado**
 - Full processor tested using **test benches**
@@ -72,7 +72,7 @@ Key goals include modular design, optimized control logic, and reliable FPGA imp
 
 ---
 
-## 💻 Tools & Technologies
+##  Tools & Technologies
 
 - **VHDL** – Hardware Description Language
 - **Vivado Design Suite** – Simulation, synthesis, bitstream generation
@@ -80,7 +80,7 @@ Key goals include modular design, optimized control logic, and reliable FPGA imp
 
 ---
 
-## 🚀 Sample Program
+##  Sample Program
 
 The following program calculates the sum of numbers from 1 to 3 and stores the result in register `R7`:
 
